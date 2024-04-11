@@ -5,6 +5,12 @@
 #include <memoire_borne.h>
 #include "Timer.h"
 
+/*! \class Voyants
+* \brief classe representant les voyants de la borne
+*
+* la classe Voyants qui gére les voyants de la borne de charge
+*/
+
 class Voyants{	
 	entrees *io ;
 	Timer timer;

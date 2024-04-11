@@ -1,0 +1,24 @@
+\doxysection{C\+:/\+Users/\+Home/\+Desktop/études/\+Documents S8 UPS/\+C++/\+TP\+\_\+\+Borne\+\_\+\+C++/src/\+Base\+\_\+client.cpp File Reference}
+\hypertarget{_base__client_8cpp}{}\label{_base__client_8cpp}\index{C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP\_Borne\_C++/src/Base\_client.cpp@{C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP\_Borne\_C++/src/Base\_client.cpp}}
+
+
+Definition des methodes de la classe \doxylink{class_base__client}{Base\+\_\+client}.  
+
+
+{\ttfamily \#include "{}Base\+\_\+client.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Include dependency graph for Base\+\_\+client.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+Definition des methodes de la classe \doxylink{class_base__client}{Base\+\_\+client}. 
+
+\begin{DoxyAuthor}{Authors}
+ELBATTAH et SAPIN-\/\+CAPEL 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11 avril 2024
+\end{DoxyDate}
+Definition des methodes de la classe \doxylink{class_base__client}{Base\+\_\+client} où les clients sont enregistrés 

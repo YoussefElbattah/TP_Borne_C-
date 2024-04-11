@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_borne_8cpp" xml:lang="en-US">
+<title>C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/borne.cpp File Reference</title>
+<indexterm><primary>C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/borne.cpp</primary></indexterm>
+<para>
+
+<para>c&apos;est le fichier &apos;main&apos; du projet </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;<?linebreak?>#include &lt;unistd.h&gt;<?linebreak?>#include &quot;memoire_borne.h&quot;<?linebreak?>#include &quot;donnees_borne.h&quot;<?linebreak?>#include &quot;Voyants.h&quot;<?linebreak?>#include &quot;boutons.h&quot;<?linebreak?>#include &quot;lecteurcarte.h&quot;<?linebreak?>#include &quot;Base_client.h&quot;<?linebreak?>#include &quot;Trappe.h&quot;<?linebreak?>#include &quot;Charge.h&quot;<?linebreak?></programlisting>Include dependency graph for borne.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="borne_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_borne_8cpp_1a98c5159076461af338dc199366d35b0c">retirer_vehicule</link> (<link linkend="_class_voyants">Voyants</link> *voyant, <link linkend="_class_charge">Charge</link> *charge)</para>
+
+<para>fonction pour retirer le véhicule en cas de fin de charge ou appui sur le bouton STOP </para>
+</listitem>
+            <listitem><para><anchor xml:id="_borne_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4"/>int <emphasis role="strong">main</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_borne_8cpp_1a5da71d53f06cfc633c9e6ea4fb7ee9f5"/>int <emphasis role="strong">numero_current</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>c&apos;est le fichier &apos;main&apos; du projet </para>
+
+<para><formalpara><title>Authors</title>
+
+<para>ELBATTAH et SAPIN-CAPEL </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>11 avril 2024</para>
+</formalpara>
+c&apos;est le fichier &apos;main&apos; du projet c&apos;est où on fait appel à toute les classes et executer le code principal </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_borne_8cpp_1a98c5159076461af338dc199366d35b0c"/><section>
+    <title>retirer_vehicule()</title>
+<indexterm><primary>retirer_vehicule</primary><secondary>borne.cpp</secondary></indexterm>
+<indexterm><primary>borne.cpp</primary><secondary>retirer_vehicule</secondary></indexterm>
+<para><computeroutput>void retirer_vehicule (<link linkend="_class_voyants">Voyants</link> * voyant, <link linkend="_class_charge">Charge</link> * charge)</computeroutput></para><para>
+
+<para>fonction pour retirer le véhicule en cas de fin de charge ou appui sur le bouton STOP </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>voyant</entry><entry>
+<para>objet pointeur de la classe Voyant </para>
+</entry>
+                            </row>
+                            <row>
+<entry>charge</entry><entry>
+<para>objet pointeur de la classe <link linkend="_class_charge">Charge</link> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="borne_8cpp_a98c5159076461af338dc199366d35b0c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

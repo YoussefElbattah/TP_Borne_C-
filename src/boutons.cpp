@@ -1,13 +1,34 @@
+/**
+* \file boutons.cpp
+* \brief Definition des methodes de la classe Boutons
+* \authors ELBATTAH et SAPIN-CAPEL
+* \date 11 avril 2024
+*
+* Definition des methodes de la classe Boutons qui gére les boutons de la borne de charge
+*
+*/
+
 #include <iostream>
 #include "boutons.h"
 #include <memoire_borne.h>
 
+/**
+ * @brief Construct a new Boutons:: Boutons object
+ * 
+ */
 
 Boutons::Boutons(){
 	io = acces_memoire(&shmid);
 	/* associe la zone de memoire partageeau pointeur */
 	if (io==NULL) std::cout<<"Erreur pas de mem sh"<<std::endl;
 }
+
+/**
+ * @brief méthode pour renvoyer le status du bouton
+ * 
+ * @param but : STP ou CHARGE
+ * @return int : status du bouton
+ */
 int Boutons::get_bouton(button but){
 	switch(but){
 		case CHARGE:
@@ -19,6 +40,12 @@ int Boutons::get_bouton(button but){
 	}
 }
 
+/**
+ * @brief méthode qui renvoie le status du bouton charge dans une durée définie par temps 
+ * 
+ * @param temps en seconds  
+ * @return status : SUCCESS ou TIMEOUT
+ */
 
 status Boutons::attente_boutons(int temps){
 	timer.initialiser();
@@ -39,7 +66,4 @@ status Boutons::attente_boutons(int temps){
         return SUCCESS;
 }
 
-void Boutons::reset_bouton_stop(){
-        io->bouton_stop = 0;
-}
 

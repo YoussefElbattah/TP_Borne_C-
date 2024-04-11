@@ -3,12 +3,17 @@
 #include "donnees_borne.h"
 
 
+/*! \class Charge
+* \brief classe representant les élements de charge de la borne de charge
+*
+* la classe Charge qui gére l'interface charge de la borne
+*/
+
 class Charge{
     int tension;
     entrees *io;
 public:
     Charge();
-    void set_tension(int tension);
     int get_tension();
     void set_pwm(pwm PWM);
     pwm get_pwm();

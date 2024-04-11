@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_boutons" xml:lang="en-US">
+<title>Boutons Class Reference</title>
+<indexterm><primary>Boutons</primary></indexterm>
+<para>
+
+<para>classe representant les <link linkend="_class_boutons">Boutons</link> de la borne </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;boutons.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_boutons_1a36a6bfceec191b832c60e566660ead68"/><emphasis role="strong">Boutons</emphasis> ()</para>
+
+<para>Construct a new <link linkend="_class_boutons">Boutons</link>:: <link linkend="_class_boutons">Boutons</link> object. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_boutons_1a6065845760761d265017ab95b4ba8ba6">get_bouton</link> (button but)</para>
+
+<para>méthode pour renvoyer le status du bouton </para>
+</listitem>
+            <listitem><para>status <link linkend="_class_boutons_1a08e9eca35634aecaad91df7c92557046">attente_boutons</link> (int temps)</para>
+
+<para>méthode qui renvoie le status du bouton charge dans une durée définie par temps </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>classe representant les <link linkend="_class_boutons">Boutons</link> de la borne </para>
+
+
+
+<para>la classe <link linkend="_class_boutons">Boutons</link> qui gére les <link linkend="_class_boutons">Boutons</link> de la borne de charge </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_boutons_1a08e9eca35634aecaad91df7c92557046"/><section>
+    <title>attente_boutons()</title>
+<indexterm><primary>attente_boutons</primary><secondary>Boutons</secondary></indexterm>
+<indexterm><primary>Boutons</primary><secondary>attente_boutons</secondary></indexterm>
+<para><computeroutput>status Boutons::attente_boutons (int temps)</computeroutput></para><para>
+
+<para>méthode qui renvoie le status du bouton charge dans une durée définie par temps </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>temps</entry><entry>
+<para>en seconds <?linebreak?> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>status : SUCCESS ou TIMEOUT </para>
+</formalpara>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_boutons_a08e9eca35634aecaad91df7c92557046_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_boutons_1a6065845760761d265017ab95b4ba8ba6"/><section>
+    <title>get_bouton()</title>
+<indexterm><primary>get_bouton</primary><secondary>Boutons</secondary></indexterm>
+<indexterm><primary>Boutons</primary><secondary>get_bouton</secondary></indexterm>
+<para><computeroutput>int Boutons::get_bouton (button but)</computeroutput></para><para>
+
+<para>méthode pour renvoyer le status du bouton </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>but</entry><entry>
+<para>: STP ou CHARGE </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int : status du bouton </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/boutons.hC:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/<link linkend="_boutons_8cpp">boutons.cpp</link></section>
+</section>

@@ -5,6 +5,12 @@
 #include "Voyants.h"
 #include "boutons.h"
 
+/*! \class LecteurCarte
+* \brief classe representant la lecture de la carte du client
+*
+* la classe LecteurCarte qui gére la lecture de la carte du client
+*/
+
 class LecteurCarte
 {
 	int numero;

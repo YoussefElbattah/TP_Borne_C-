@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_lecteurcarte_8h_source" xml:lang="en-US">
+<title>lecteurcarte.h</title>
+<indexterm><primary>C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/lecteurcarte.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;LECTEURCARTE_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;LECTEURCARTE_H</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;lcarte.h&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;Base_client.h&quot;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;Voyants.h&quot;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&quot;boutons.h&quot;</emphasis>
+7 
+14 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_lecteur_carte">LecteurCarte</link>
+15 {
+16 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;numero;
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;carte;
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;current_num;
+19 &#32;&#32;public&#32;:&#32;
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_lecteur_carte_1a88d9ab0b84c79a7553a31d8dfba971b7">lire_carte</link>();
+21 &#32;&#32;&#32;&#32;<link linkend="_class_lecteur_carte_1abbbb461e7a4e40468f27542a9cc65a22">LecteurCarte</link>();
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;get_num();
+23 };
+24 
+25 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;LECTEURCARTE_H</emphasis>
+</programlisting></section>

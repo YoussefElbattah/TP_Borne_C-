@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__timer_8h_source" xml:lang="en-US">
+<title>Timer.h</title>
+<indexterm><primary>C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/Timer.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;TIMER_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;TIMER_H</emphasis>
+3 <emphasis role="preprocessor">#include&#32;&lt;donnees_borne.h&gt;</emphasis>
+4 
+11 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_timer">Timer</link>{
+12 &#32;&#32;&#32;&#32;entrees&#32;*io;
+13 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;depart_timer,&#32;end_timer;
+14 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;shmid;
+15 &#32;&#32;&#32;&#32;public&#32;:
+16 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_timer_1ad62d4bbb0612a4f47581570c892fc393">initialiser</link>();
+17 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_timer_1ac07b7f7f017b06b37655900acd030f8c">get_value</link>();
+18 };
+19 
+20 
+21 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

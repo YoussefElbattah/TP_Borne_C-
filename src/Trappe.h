@@ -4,6 +4,11 @@
 #include "donnees_borne.h"
 #include "Voyants.h"
 
+/*! \class Voyants
+* \brief classe representant les voyants de la borne
+*
+* la classe Charge qui gére les voyants de la borne de charge
+*/
 class Trappe{
     int trappe_status;
     entrees *io;
@@ -12,7 +17,6 @@ public:
     Trappe();
     void Close();
     void Open();
-    int getStatus();
 };
 
 #endif // TRAPPE_H

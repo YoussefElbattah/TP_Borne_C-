@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_base__client" xml:lang="en-US">
+<title>Base_client Class Reference</title>
+<indexterm><primary>Base_client</primary></indexterm>
+<para>
+
+<para>classe representant la Base client de la borne </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Base_client.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_base__client_1ade6940066d6a9be4fba5570b31f83280"/><emphasis role="strong">Base_client</emphasis> ()</para>
+
+<para>Construct a new <link linkend="_class_base__client_1ade6940066d6a9be4fba5570b31f83280">Base_client::Base_client</link> object. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_base__client_1aa1a6d7b781f45ac99d62e91774b53daa">authentifier</link> (int numero_carte)</para>
+
+<para>méthode pour l&apos;authentification d&apos;un client </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_base__client_1a077b06d5e6cd86ca1e388ab6e784bad1"/>void <emphasis role="strong">get_client</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>classe representant la Base client de la borne </para>
+
+
+
+<para>la classe <link linkend="_class_base__client">Base_client</link> qui gére la Base client de la borne de charge </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_base__client_1aa1a6d7b781f45ac99d62e91774b53daa"/><section>
+    <title>authentifier()</title>
+<indexterm><primary>authentifier</primary><secondary>Base_client</secondary></indexterm>
+<indexterm><primary>Base_client</primary><secondary>authentifier</secondary></indexterm>
+<para><computeroutput>int Base_client::authentifier (int numero_carte)</computeroutput></para><para>
+
+<para>méthode pour l&apos;authentification d&apos;un client </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>numero_carte</entry><entry>
+<para>du client authentifié </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int : Succes ou Echec </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/Base_client.hC:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/<link linkend="__base__client_8cpp">Base_client.cpp</link></section>
+</section>

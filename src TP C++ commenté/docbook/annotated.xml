@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_base__client">Base_client</link>
+<para>Classe representant la Base client de la borne </para>
+<link linkend="_class_boutons">Boutons</link>
+<para>Classe representant les <link linkend="_class_boutons">Boutons</link> de la borne </para>
+<link linkend="_class_charge">Charge</link>
+<para>Classe representant les élements de charge de la borne de charge </para>
+<link linkend="_class_lecteur_carte">LecteurCarte</link>
+<para>Classe representant la lecture de la carte du client </para>
+<link linkend="_class_timer">Timer</link>
+<para>Classe representant les <link linkend="_class_timer">Timer</link> de la borne </para>
+<link linkend="_class_trappe">Trappe</link><link linkend="_class_voyants">Voyants</link>
+<para>Classe representant les voyants de la borne </para>
+</section>

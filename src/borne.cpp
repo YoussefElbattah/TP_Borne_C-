@@ -1,3 +1,14 @@
+
+/**
+* \file borne.cpp
+* \brief c'est le fichier 'main' du projet
+* \authors ELBATTAH et SAPIN-CAPEL
+* \date 11 avril 2024
+*
+* c'est le fichier 'main' du projet c'est où on fait appel à toute les classes et executer le code principal
+*
+*/
+
 #include <iostream>
 #include <unistd.h>
 #include "memoire_borne.h"
@@ -9,6 +20,12 @@
 #include "Trappe.h"
 #include "Charge.h"
 int numero_current;
+/**
+ * @brief fonction pour retirer le véhicule en cas de fin de charge ou appui sur le bouton STOP
+ * 
+ * @param voyant objet pointeur de la classe Voyant
+ * @param charge objet pointeur de la classe Charge
+ */
 void retirer_vehicule(Voyants *voyant, Charge *charge);
 int main()
 {
@@ -54,7 +71,6 @@ int main()
                     /*  FIN ETAT C  */
                     while((charge.get_tension()!=6) && !(bouton.get_bouton(STP)));
                     if(bouton.get_bouton(STP)){
-                        bouton.reset_bouton_stop();
                         charge.set_pwm(DC);
                         std::cout<<"bouton stop est appuie"<<std::endl;
                         retirer_vehicule(&voyant,&charge);

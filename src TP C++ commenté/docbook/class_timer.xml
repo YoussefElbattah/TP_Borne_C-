@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_timer" xml:lang="en-US">
+<title>Timer Class Reference</title>
+<indexterm><primary>Timer</primary></indexterm>
+<para>
+
+<para>classe representant les <link linkend="_class_timer">Timer</link> de la borne </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Timer.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_timer_1ad62d4bbb0612a4f47581570c892fc393"/>void <emphasis role="strong">initialiser</emphasis> ()</para>
+
+<para>méthode qui permet d&apos;initialiser le timer </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_timer_1ac07b7f7f017b06b37655900acd030f8c">get_value</link> ()</para>
+
+<para>méthode qui renvoie la valeur du temps passé après l&apos;initialisation </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>classe representant les <link linkend="_class_timer">Timer</link> de la borne </para>
+
+
+
+<para>la classe <link linkend="_class_timer">Timer</link> qui gére le <link linkend="_class_timer">Timer</link> de la borne de charge </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_timer_1ac07b7f7f017b06b37655900acd030f8c"/><section>
+    <title>get_value()</title>
+<indexterm><primary>get_value</primary><secondary>Timer</secondary></indexterm>
+<indexterm><primary>Timer</primary><secondary>get_value</secondary></indexterm>
+<para><computeroutput>int Timer::get_value ( )</computeroutput></para><para>
+
+<para>méthode qui renvoie la valeur du temps passé après l&apos;initialisation </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>int </para>
+</formalpara>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_timer_ac07b7f7f017b06b37655900acd030f8c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/Timer.hC:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/<link linkend="__timer_8cpp">Timer.cpp</link></section>
+</section>

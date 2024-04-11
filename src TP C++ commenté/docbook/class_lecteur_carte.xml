@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_lecteur_carte" xml:lang="en-US">
+<title>LecteurCarte Class Reference</title>
+<indexterm><primary>LecteurCarte</primary></indexterm>
+<para>
+
+<para>classe representant la lecture de la carte du client </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;lecteurcarte.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_lecteur_carte_1a88d9ab0b84c79a7553a31d8dfba971b7">lire_carte</link> ()</para>
+
+<para>méthode pour lire le numero de la carte et le renvoyer </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_lecteur_carte_1abbbb461e7a4e40468f27542a9cc65a22"/><emphasis role="strong">LecteurCarte</emphasis> ()</para>
+
+<para>Construct a new Lecteur Carte:: Lecteur Carte object. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_lecteur_carte_1a9990cd9e42af1a2d73aead5099965541"/>int <emphasis role="strong">get_num</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>classe representant la lecture de la carte du client </para>
+
+
+
+<para>la classe <link linkend="_class_lecteur_carte">LecteurCarte</link> qui gére la lecture de la carte du client </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_lecteur_carte_1a88d9ab0b84c79a7553a31d8dfba971b7"/><section>
+    <title>lire_carte()</title>
+<indexterm><primary>lire_carte</primary><secondary>LecteurCarte</secondary></indexterm>
+<indexterm><primary>LecteurCarte</primary><secondary>lire_carte</secondary></indexterm>
+<para><computeroutput>int LecteurCarte::lire_carte ( )</computeroutput></para><para>
+
+<para>méthode pour lire le numero de la carte et le renvoyer </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>int : numerode la carte </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/lecteurcarte.hC:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP_Borne_C++/src/<link linkend="_lecteurcarte_8cpp">lecteurcarte.cpp</link></section>
+</section>

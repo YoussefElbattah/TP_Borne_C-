@@ -1,0 +1,36 @@
+\doxysection{boutons.\+h}
+\hypertarget{boutons_8h_source}{}\label{boutons_8h_source}\index{C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP\_Borne\_C++/src/boutons.h@{C:/Users/Home/Desktop/études/Documents S8 UPS/C++/TP\_Borne\_C++/src/boutons.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BOUTONS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BOUTONS\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <donnees\_borne.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Timer.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Voyants.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{00008\ \ \ \ \ CHARGE\ =\ 0,}
+\DoxyCodeLine{00009\ \ \ \ \ STP}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \}button;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ TIMEOUT\ =\ 0,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ SUCCESS}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \}status;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_boutons}{Boutons}}\{}
+\DoxyCodeLine{00019\ \ \ \ \ entrees\ *io;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ shmid;}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_timer}{Timer}}\ timer;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_voyants}{Voyants}}\ voyant;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_boutons}{Boutons}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ get\_bouton(button\ but);}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ status\ attente\_boutons(\textcolor{keywordtype}{int}\ temps);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ reset\_bouton\_stop();}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
