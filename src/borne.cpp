@@ -15,11 +15,13 @@
 #include "donnees_borne.h"
 #include "Voyants.h"
 #include "boutons.h"
+#include <lcarte.h>
 #include "lecteurcarte.h"
 #include "Base_client.h"
 #include "Trappe.h"
 #include "Charge.h"
-int numero_current;
+int numero_current;     /*!< le numero de la carte du client qui est en train de charger son véhicule */ 
+int carte_existe = 0;   /*!< cette variable est pour rendre le code génerique avec ou sans carte */ 
 /**
  * @brief fonction pour retirer le véhicule en cas de fin de charge ou appui sur le bouton STOP
  * 
@@ -97,15 +99,34 @@ int main()
 }
 
 void retirer_vehicule(Voyants *voyant, Charge *charge){
-    int num;
+    int num; /*!< le numero de la carte du client inserée pour retirer le véhicule */
     charge->set_pwm(DC);
     charge->open_AC();
-    std::cout<<"entrez le carte pour retirer le vehicule"<<std::endl;
-    std::cin>>num;
-
+    if(carte_existe){
+        attente_insertion_carte();
+        if(carte_inseree()){
+                num = lecture_numero_carte();
+                std::cout<< "numero lu : " << num<< std::endl;
+                attente_retrait_carte();
+        }
+    }else{
+        std::cout<<"entrez le carte pour retirer le vehicule"<<std::endl;
+        std::cin>>num;
+    }
     while(num != numero_current){
         std::cout<<"fausse carte !! entrez à nouveau votre carte pour retirer le vehicule"<<std::endl;
         std::cin>>num;
+        if(carte_existe){
+        attente_insertion_carte();
+        if(carte_inseree()){
+            num = lecture_numero_carte();
+            std::cout<< "numero lu : " << num<< std::endl;
+            attente_retrait_carte();
+        }
+        }else{
+            std::cout<<"entrez le carte pour retirer le vehicule"<<std::endl;
+            std::cin>>num;
+        }
     }
     std::cout<<"meme carte :)"<<std::endl;
     std::cout<<"retirez la prise :)"<<std::endl;

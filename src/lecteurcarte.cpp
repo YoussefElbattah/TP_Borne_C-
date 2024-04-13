@@ -21,7 +21,7 @@
 LecteurCarte::LecteurCarte()
 {
         numero = 0;
-        carte = 0;
+        carte_existe = 0;
 }
 
 /**
@@ -31,7 +31,7 @@ LecteurCarte::LecteurCarte()
  */
 int LecteurCarte::lire_carte()
 {
-        if(carte == 1){
+        if(carte_existe == 1){
             attente_insertion_carte();
             if(carte_inseree()){
                     numero = lecture_numero_carte();

@@ -14,8 +14,7 @@
 class LecteurCarte
 {
 	int numero;
-        int carte;
-        int current_num;
+        int carte_existe; /*!< cette variable est pour rendre le code génerique avec ou sans carte */ 
   public : 
         int lire_carte();
 	LecteurCarte();

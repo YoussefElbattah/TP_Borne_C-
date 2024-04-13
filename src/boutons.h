@@ -42,7 +42,6 @@ class Boutons{
 	entrees *io;
 	int shmid;
 	Timer timer;
-	Voyants voyant;
 	public:
 	Boutons();
 	int get_bouton(button but);
